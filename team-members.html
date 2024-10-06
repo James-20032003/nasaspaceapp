@@ -119,36 +119,132 @@ main {
             <a href="https://www.instagram.com" target="_blank" class="social-icon">Instagram</a>  
             <a href="https://www.linkedin.com" target="_blank" class="social-icon">LinkedIn</a>  
         </div>  
-    </header> 
+    </header>  
+    <style>  
+        body {  
+            background-color: #1b1b1b;  
+            color: #f0f0f0;  
+            font-family: Arial, sans-serif;  
+        }  
+
+        header {  
+            text-align: center;  
+            padding: 20px;  
+        }  
+
+        nav ul {  
+            list-style-type: none;  
+            padding: 0;  
+        }  
+
+        nav ul li {  
+            display: inline;  
+            margin: 0 15px;  
+        }  
+
+        nav ul li a {  
+            color: #f0f0f0;  
+            text-decoration: none;  
+        }  
+
+        .container {  
+            text-align: center;  
+            padding: 20px;  
+        }  
+
+        .team-member {  
+            display: inline-block;  
+            margin: 20px;  
+            position: relative;  
+            overflow: hidden;  
+            width: 200px; /* Set a fixed width */  
+            transition: transform 0.3s;  
+        }  
+
+        .team-member img {  
+            width: 100%;  
+            height: auto;  
+            border-radius: 10px;  
+            transition: transform 0.5s;  
+        }  
+
+        .team-member:hover img {  
+            transform: scale(1.1); /* Scale image on hover */  
+        }  
+
+        .member-info {  
+            display: none;  
+            position: absolute;  
+            bottom: 0;  
+            left: 0;  
+            right: 0;  
+            background-color: rgba(0, 0, 0, 0.7);  
+            color: #fff;  
+            padding: 10px;  
+            border-radius: 0 0 10px 10px;  
+            transition: opacity 0.5s;  
+            opacity: 0;  
+        }  
+
+        .team-member:hover .member-info {  
+            display: block;  
+            opacity: 1; /* Show info on hover */  
+        }  
+    </style>  
 </head>  
 <body>  
     <header>  
-        <h1>Contact Us</h1>  
+        <h1>Meet Our Team</h1>  
         <nav>  
             <ul>  
                 <li><a href="index.html">Home</a></li>  
                 <li><a href="videos.html">Videos</a></li>  
                 <li><a href="images.html">Images</a></li>  
-                <li><a href="team-members.html">Team Members</a></li>  
+                <li><a href="contact.html">Contact</a></li>  
             </ul>  
         </nav>  
     </header>  
 
     <main>  
         <div class="container">  
-            <h2>Get in Touch</h2>  
-            <form onsubmit="return showAlert();">  
-                <label for="name">Name:</label>  
-                <input type="text" id="name" name="name" required>  
-                
-                <label for="email">Email:</label>  
-                <input type="email" id="email" name="email" required>  
-                
-                <label for="message">Message:</label>  
-                <textarea id="message" name="message" rows="4" required></textarea>  
-                
-                <input type="submit" value="Send Message">  
-            </form>  
+            <h2>Team Members</h2>  
+
+            <div class="team-member">  
+                <img src="images/john_doe.jpg" alt="John Doe">  
+                <div class="member-info">  
+                    <h3>John Doe</h3>  
+                    <p><strong>Role:</strong> Climate Scientist</p>  
+                    <p>John has over 10 years of experience researching climate impacts on biodiversity.</p>  
+                </div>  
+            </div>  
+
+            <div class="team-member">  
+                <img src="images/jane_smith.jpg" alt="Jane Smith">  
+                <div class="member-info">  
+                    <h3>Jane Smith</h3>  
+                    <p><strong>Role:</strong> Environmental Educator</p>  
+                    <p>Jane conducts workshops and creates educational content to promote environmental awareness.</p>  
+                </div>  
+            </div>  
+
+            <div class="team-member">  
+                <img src="images/david_lee.jpg" alt="David Lee">  
+                <div class="member-info">  
+                    <h3>David Lee</h3>  
+                    <p><strong>Role:</strong> Ecologist</p>  
+                    <p>David specializes in ecosystem restoration efforts, including planting native species.</p>  
+                </div>  
+            </div>  
+
+            <div class="team-member">  
+                <img src="images/emily_clark.jpg" alt="Emily Clark">  
+                <div class="member-info">  
+                    <h3>Emily Clark</h3>  
+                    <p><strong>Role:</strong> Outreach Coordinator</p>  
+                    <p>Emily engages with the community and stakeholders to promote the project.</p>  
+                </div>  
+            </div>  
+
         </div>  
     </main>  
 
@@ -163,14 +259,5 @@ main {
             </div>  
         </div>  
     </footer>
-
-
-    <script>  
-        // Function to show alert on form submission  
-        function showAlert() {  
-            alert("Thank you for contacting us! We will get back to you soon.");  
-            return false; // Prevent actual form submission for demonstration  
-        }  
-    </script>  
 </body>  
 </html>

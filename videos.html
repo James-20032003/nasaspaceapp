@@ -120,7 +120,6 @@ main {
             <a href="https://www.linkedin.com" target="_blank" class="social-icon">LinkedIn</a>  
         </div>  
     </header> 
-     
     <style>  
         body {  
             background-color: #1b1b1b;  
@@ -148,55 +147,38 @@ main {
             text-decoration: none;  
         }  
 
-        .cover-image {  
-            width: 100%;  
-            height: auto;  
-            max-height: 400px;  
-            object-fit: cover; /* Ensure the image covers the area without stretching */  
-        }  
-
-        .description {  
-            max-width: 800px;  
+        .video-container {  
+            max-width: 1000px;  
             margin: 20px auto;  
-            text-align: center;  
-        }  
-
-        .videos {  
-            margin-top: 50px;  
-            text-align: center;  
+            display: flex;  
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */  
+            justify-content: space-between; /* Space evenly */  
         }  
 
         .video {  
-            display: inline-block;  
-            margin: 20px;  
-            width: 300px; /* Set a fixed width for videos */  
             background-color: #333;  
             border-radius: 10px;  
-            overflow: hidden;  
+            margin: 10px;  
+            flex: 1 1 30%; /* Flex items to grow and shrink (3 items per row) */  
+            min-width: 300px; /* Minimum width for each video box */  
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  
+            transition: transform 0.3s; /* Animation on hover */  
+        }  
+
+        .video:hover {  
+            transform: scale(1.05); /* Scale effect on hover */  
         }  
 
         .video iframe {  
             width: 100%;  
-            height: 200px; /* Set a height for the video */  
-        }  
-        
-        .gallery {  
-            display: grid;  
-            grid-template-columns: repeat(3, 1fr); /* 3 columns for the gallery */  
-            gap: 10px; /* Space between images */  
-            max-width: 900px;  
-            margin: 40px auto; /* Center the gallery */  
+            height: 200px; /* Fixed height for video */  
+            border: none;   
+            border-radius: 10px 10px 0 0; /* Rounded corners on the top */  
         }  
 
-        .gallery img {  
-            width: 100%; /* Make sure images are responsive */  
-            height: auto; /* Maintain aspect ratio */  
-            border-radius: 8px; /* Rounded corners for images */  
-            transition: transform 0.3s; /* Smooth scaling transition */  
-        }  
-
-        .gallery img:hover {  
-            transform: scale(1.05); /* Scale images on hover */  
+        .video-description {  
+            padding: 15px;  
+            text-align: center;  
         }  
 
         footer {  
@@ -207,7 +189,7 @@ main {
 </head>  
 <body>  
     <header>  
-        <h1>Ecosystem Education Project</h1>  
+        <h1>Ecosystem Education Project - Videos</h1>  
         <nav>  
             <ul>  
                 <li><a href="index.html">Home</a></li>  
@@ -218,60 +200,55 @@ main {
         </nav>  
     </header>  
 
-    <main> 
-         
-           
-         
-        <img src="connected_earth_disasters.67d390cc - Copy.png" alt="Ecosystem Cover" class="cover-image"> <!-- Add your cover image here -->  
-        <div class="description">  
-            <h2>Welcome to the Ecosystem Education Project</h2>  
-            <p>This project is dedicated to educating individuals about the importance of ecosystems and biodiversity. Our aim is to raise awareness and foster a deeper understanding of the environmental issues we face today. Join us in our journey to protect our planet and its precious resources.</p>  
-        </div>  
-        <div class="container">  
-            <h2>Gallery of Ecosystems Affec777ted by Climate Change</h2>  
-            <h3>Amazon Rainforest</h3>  
-            <img src="earth_system_four_panel.jpg (1).webp" alt="Amazon Rainforest">  
-            <p>The Amazon rainforest is one of the most biodiverse places on Earth and is severely affected by deforestation and climate change.</p>  
-            <h3>Coral Reefs</h3>  
-            <img src="floods.png" alt="Coral Reef">  
-            <p>Coral reefs are dying at an alarming rate due to rising ocean temperatures and acidification, which pose a threat to marine life.</p>  
-              
-        </div>  
-
-        <div class="videos">  
-            <h2>Featured Videos</h2>  
-            <p>Explore our collection of educational videos that cover various topics related to ecosystems, climate change, conservation efforts, and much more! Each video is designed to provide insights and practical knowledge that you can apply to help make a difference.</p>  
-            
+    <main>  
+        <div class="video-container">  
             <div class="video">  
-                <h3>The Importance of Biodiversity</h3>  
-                <iframe src="https://www.youtube.com/embed/example1" frameborder="0" allowfullscreen></iframe>  
-                <p>Learn about the vital role biodiversity plays in our planet's health and how it impacts every one of us.</p>  
+                <iframe src="https://www.youtube.com/embed/example1" allowfullscreen></iframe>  
+                <div class="video-description">  
+                    <h3>The Importance of Biodiversity</h3>  
+                    <p>Discover why biodiversity is essential for a healthy ecosystem.</p>  
+                </div>  
             </div>  
 
             <div class="video">  
-                <h3>Understanding Climate Change</h3>  
-                <iframe src="https://www.youtube.com/embed/example2" frameborder="0" allowfullscreen></iframe>  
-                <p>Discover the science behind climate change and what we can do to combat its effects on the environment.</p>  
+                <iframe src="https://www.youtube.com/embed/example2" allowfullscreen></iframe>  
+                <div class="video-description">  
+                    <h3>Understanding Climate Change</h3>  
+                    <p>Learn about the causes and effects of climate change.</p>  
+                </div>  
             </div>  
 
             <div class="video">  
-                <h3>Conservation Strategies</h3>  
-                <iframe src="https://www.youtube.com/embed/example3" frameborder="0" allowfullscreen></iframe>  
-                <p>Explore effective strategies for conserving ecosystems and restoring habitats for future generations.</p>  
+                <iframe src="https://www.youtube.com/embed/example3" allowfullscreen></iframe>  
+                <div class="video-description">  
+                    <h3>Conservation Strategies</h3>  
+                    <p>Explore methods to protect endangered species and their habitats.</p>  
+                </div>  
             </div>  
-        </div>  
 
-        <div class="gallery">  
-            <h2>Gallery</h2>  
-            <img src="shasta_2023_after.jpg" alt="Description of Photo 1">  
-            <img src="shasta_2022_before.jpg" alt="Description of Photo 2">  
-            <img src="socalsnow_oli2_2023057_lrg.jpg" alt="Description of Photo 3">  
-            <img src="socalsnow_oli2_2023057_lrg.jpg" alt="Description of Photo 4">  
-            <img src="IMG 2 CHANGE.jpg" alt="Description of Photo 5">  
-            <img src="dsert.png" alt="Description of Photo 6">  
-            <img src="WORLD FIRE.png" alt="Description of Photo 7">  
-            <img src="connected_earth_biodiversity.6d153b04.png" alt="Description of Photo 8">  
-            <img src="thnk abt nat.png" alt="Description of Photo 9">  
+            <div class="video">  
+                <iframe src="https://www.youtube.com/embed/example4" allowfullscreen></iframe>  
+                <div class="video-description">  
+                    <h3>Renewable Energy</h3>  
+                    <p>Understand the role of renewable energy in reducing our carbon footprint.</p>  
+                </div>  
+            </div>  
+
+            <div class="video">  
+                <iframe src="https://www.youtube.com/embed/example5" allowfullscreen></iframe>  
+                <div class="video-description">  
+                    <h3>Plastic Pollution</h3>  
+                    <p>Learn about the impact of plastic on the environment and human health.</p>  
+                </div>  
+            </div>  
+
+            <div class="video">  
+                <iframe src="https://www.youtube.com/embed/example6" allowfullscreen></iframe>  
+                <div class="video-description">  
+                    <h3>Restoring Ecosystems</h3>  
+                    <p>Discover innovative techniques for restoring damaged ecosystems.</p>  
+                </div>  
+            </div>  
         </div>  
     </main>  
 

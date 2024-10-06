@@ -119,36 +119,135 @@ main {
             <a href="https://www.instagram.com" target="_blank" class="social-icon">Instagram</a>  
             <a href="https://www.linkedin.com" target="_blank" class="social-icon">LinkedIn</a>  
         </div>  
-    </header> 
+    </header>  
+    <style>
+
+        /* General body styles */  
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background: #2c2c2c;  
+    color: #ffffff;  
+}  
+
+/* Header styles */  
+.header {  
+    background: #1f1f1f;  
+    padding: 10px 20px;  
+    position: fixed; /* Fix the header at the top */  
+    top: 0;  
+    width: 100%;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    z-index: 1000; /* Ensure it's above other content */  
+}  
+
+.logo h1 {  
+    margin: 0;  
+    color: #00aced; /* Logo color */  
+}  
+
+/* Navigation styles */  
+nav {  
+    flex-grow: 1; /* Allow nav to take up available space */  
+}  
+
+nav ul {  
+    list-style-type: none;  
+    padding: 0;  
+    display: flex;  
+    justify-content: center; /* Centers the nav items */  
+}  
+
+nav ul li {  
+    margin: 0 15px;  
+}  
+
+nav ul li a {  
+    color: #ffffff;  
+    text-decoration: none;  
+    padding: 10px 15px;  
+    border-radius: 5px;  
+    transition: background-color 0.3s;  
+}  
+
+nav ul li a:hover {  
+    background-color: #00aced; /* Highlight on hover */  
+}  
+
+/* Social links */  
+.social-links {  
+    margin-left: 20px;  
+}  
+
+.social-links .social-icon {  
+    margin: 0 10px;  
+    text-decoration: none;  
+    color: #ffffff;  
+    transition: color 0.3s;  
+}  
+
+.social-links .social-icon:hover {  
+    color: #00aced; /* Change color on hover */  
+}  
+
+/* Main styles */  
+main {  
+    padding-top: 80px; /* Add some top padding to avoid content hiding under the fixed header */  
+}  
+
+.container {  
+    margin: 0 auto;  
+    width: 90%;  
+    max-width: 1200px;  
+}  
+
+/* Footer styles */  
+.footer {  
+    background-color: #1f1f1f;  
+    color: #ffffff;  
+    padding: 20px 0;  
+    text-align: center;  
+    position: relative;  
+    width: 100%;  
+}
+    </style>
 </head>  
 <body>  
-    <header>  
-        <h1>Contact Us</h1>  
+    <header class="header">  
+        <div class="logo">  
+            <h1>ClimateStars</h1>  <!-- Logo Title -->  
+        </div>  
         <nav>  
             <ul>  
                 <li><a href="index.html">Home</a></li>  
                 <li><a href="videos.html">Videos</a></li>  
-                <li><a href="images.html">Images</a></li>  
+                <li><a href="contact.html">Contact</a></li>  
                 <li><a href="team-members.html">Team Members</a></li>  
             </ul>  
         </nav>  
+        <div class="social-links">  
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">Facebook</a>  
+            <a href="https://www.twitter.com" target="_blank" class="social-icon">Twitter</a>  
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">Instagram</a>  
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon">LinkedIn</a>  
+        </div>  
     </header>  
 
     <main>  
         <div class="container">  
-            <h2>Get in Touch</h2>  
-            <form onsubmit="return showAlert();">  
-                <label for="name">Name:</label>  
-                <input type="text" id="name" name="name" required>  
-                
-                <label for="email">Email:</label>  
-                <input type="email" id="email" name="email" required>  
-                
-                <label for="message">Message:</label>  
-                <textarea id="message" name="message" rows="4" required></textarea>  
-                
-                <input type="submit" value="Send Message">  
-            </form>  
+            <h2>Gallery of Ecosystems Affected by Climate Change</h2>  
+            <h3>Amazon Rainforest</h3>  
+            <img src="earth_system_four_panel.jpg (1).webp" alt="Amazon Rainforest">  
+            <p>The Amazon rainforest is one of the most biodiverse places on Earth and is severely affected by deforestation and climate change.</p>  
+            <h3>Coral Reefs</h3>  
+            <img src="floods.png" alt="Coral Reef">  
+            <p>Coral reefs are dying at an alarming rate due to rising ocean temperatures and acidification, which pose a threat to marine life.</p>  
+            <h3>Melting Glaciers</h3>  
+            <img src="gas.png" alt="Melting Glacier">  
+            <p>Glaciers are melting faster than ever, which contributes to rising sea levels and loss of habitat for polar species.</p>  
         </div>  
     </main>  
 
@@ -162,15 +261,11 @@ main {
                 <a href="https://www.linkedin.com" target="_blank" class="social-icon">LinkedIn</a>  
             </div>  
         </div>  
-    </footer>
-
+    </footer> 
 
     <script>  
-        // Function to show alert on form submission  
-        function showAlert() {  
-            alert("Thank you for contacting us! We will get back to you soon.");  
-            return false; // Prevent actual form submission for demonstration  
-        }  
+        // JavaScript for interactivity  
+        console.log("Explore our gallery of ecosystems.");  
     </script>  
 </body>  
 </html>
