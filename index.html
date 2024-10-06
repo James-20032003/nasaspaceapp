@@ -261,23 +261,88 @@ main {
             </div>  
         </div>  
 
-        <h2>Gallery</h2>  
+      <style>
+           body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            background-color: #2c2c2c;  
+            color: #ffffff;  
+        }  
 
-            <div>  
+        /* Main styles */  
+        .container {  
+            margin: 0 auto;  
+            width: 90%;  
+            max-width: 1200px;  
+            padding-top: 80px; /* Add padding to avoid header overlap */  
+        }  
+
+        /* Gallery styles */  
+        .gallery {  
+            display: grid;  
+            grid-template-columns: repeat(3, 1fr); /* 3 columns for the gallery */  
+            gap: 20px; /* Space between images */  
+            margin-top: 40px; /* Top margin for spacing */  
+        }  
+
+        .gallery-item {  
+            background-color: #333;  
+            border-radius: 8px;  
+            overflow: hidden; // Ensures rounded corners for the background  
+            text-align: center;  
+            padding: 10px;  
+        }  
+
+        .gallery-item img {  
+            width: 100%;  
+            height: auto;  
+            border-radius: 8px; /* Rounded corners for images */  
+            transition: transform 0.3s; /* Smooth scaling transition */  
+        }  
+
+        .gallery-item img:hover {  
+            transform: scale(1.05); /* Scale images on hover */  
+        }  
+
+        .gallery-item p {  
+            margin: 10px 0 0;  
+            font-size: 14px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="container">  
+        <h2>Gallery of Ecosystems Affected by Climate Change</h2>  
+
+        <div class="gallery">  
+            <div class="gallery-item">  
+                <img src="earth_system_four_panel.jpg" alt="Amazon Rainforest">  
+                <p>The Amazon rainforest is one of the most biodiverse places on Earth and is severely affected by deforestation and climate change.</p>  
+            </div>  
+
+            <div class="gallery-item">  
+                <img src="floods.png" alt="Coral Reef">  
+                <p>Coral reefs are dying at an alarming rate due to rising ocean temperatures and acidification, which pose a threat to marine life.</p>  
+            </div>  
+
+            <div class="gallery-item">  
                 <img src="floodsss.png" alt="Flood Barriers and Retention Ponds">  
                 <p>Flood Barriers and Retention Ponds: Construct flood barriers and retention ponds to absorb excess water during heavy rainfall.</p>  
             </div>  
 
-            <div>  
+            <div class="gallery-item">  
                 <img src="WORLD FIRE.png" alt="Forest Management Practices">  
                 <p>Forest Management Practices: Implement controlled burns and thinning to reduce fuel loads and lower the risk of severe wildfires.</p>  
             </div>  
 
-            <div>  
+            <div class="gallery-item">  
                 <img src="gass at.png" alt="Pollution Control Measures">  
                 <p>Implement advanced filtration and scrubber systems to capture pollutants before they are released into the atmosphere. Transition to cleaner energy sources, such as solar, wind, or natural gas, to reduce reliance on fossil fuels.</p>  
             </div>  
         </div>  
+    </div>  
+      </style>
     </main>  
 
     <footer class="footer">  
