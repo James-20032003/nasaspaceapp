@@ -1,97 +1,223 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Climate Change and Ecosystems</title>
-    <link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Images - Ecosystem Education Project</title>  
+    <link rel="stylesheet" href="styles.css">  
     <style>
-        /* General body styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #2c2c2c;
-            color: #ffffff;
-        }
 
-        /* Container styles */
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
+        /* General body styles */  
+body {  
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background: #2c2c2c;  
+    color: #ffffff;  
+}  
 
-        /* Card styles */
-        .card {
-            background: #1f1f1f;
-            border-radius: 10px;
-            margin: 20px;
-            overflow: hidden;
-            width: 300px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-        }
+/* Header styles */  
+.header {  
+    background: #1f1f1f;  
+    padding: 10px 20px;  
+    position: fixed; /* Fix the header at the top */  
+    top: 0;  
+    width: 100%;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    z-index: 1000; /* Ensure it's above other content */  
+}  
 
-        .card:hover {
-            transform: scale(1.05);
-        }
+.logo h1 {  
+    margin: 0;  
+    color: #00aced; /* Logo color */  
+}  
 
-        .card img {
-            width: 100%;
-            height: auto;
-        }
+/* Navigation styles */  
+nav {  
+    flex-grow: 1; /* Allow nav to take up available space */  
+}  
 
-        .card .content {
-            padding: 20px;
-        }
+nav ul {  
+    list-style-type: none;  
+    padding: 0;  
+    display: flex;  
+    justify-content: center; /* Centers the nav items */  
+}  
 
-        .card .content h3 {
-            margin: 0 0 10px;
-            color: #00aced;
-        }
+nav ul li {  
+    margin: 0 15px;  
+}  
 
-        .card .content p {
-            margin: 0;
-        }
+nav ul li a {  
+    color: #ffffff;  
+    text-decoration: none;  
+    padding: 10px 15px;  
+    border-radius: 5px;  
+    transition: background-color 0.3s;  
+}  
 
-        /* Footer styles */
-        .footer {
-            background-color: #1f1f1f;
-            color: #ffffff;
-            padding: 20px 0;
-            text-align: center;
-            position: relative;
-            width: 100%;
-        }
+nav ul li a:hover {  
+    background-color: #00aced; /* Highlight on hover */  
+}  
+
+/* Social links */  
+.social-links {  
+    margin-left: 20px;  
+}  
+
+.social-links .social-icon {  
+    margin: 0 10px;  
+    text-decoration: none;  
+    color: #ffffff;  
+    transition: color 0.3s;  
+}  
+
+.social-links .social-icon:hover {  
+    color: #00aced; /* Change color on hover */  
+}  
+
+/* Main styles */  
+main {  
+    padding-top: 80px; /* Add some top padding to avoid content hiding under the fixed header */  
+}  
+
+.container {  
+    margin: 0 auto;  
+    width: 90%;  
+    max-width: 1200px;  
+}  
+
+/* Footer styles */  
+.footer {  
+    background-color: #1f1f1f;  
+    color: #ffffff;  
+    padding: 20px 0;  
+    text-align: center;  
+    position: relative;  
+    width: 100%;  
+}
     </style>
+</head>  
+<body>  
+    <header class="header">  
+        <div class="logo">  
+            <h1>ClimateStars</h1>  <!-- Logo Title -->  
+        </div>  
+        <nav>  
+            <ul>  
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="videos.html">Videos</a></li>  
+                <li><a href="contact.html">Contact</a></li>  
+                <li><a href="team-members.html">Team Members</a></li>  
+            </ul>  
+        </nav>  
+        <div class="social-links">  
+            <a href="https://www.facebook.com" target="_blank" class="social-icon">Facebook</a>  
+            <a href="https://www.twitter.com" target="_blank" class="social-icon">Twitter</a>  
+            <a href="https://www.instagram.com" target="_blank" class="social-icon">Instagram</a>  
+            <a href="https://www.linkedin.com" target="_blank" class="social-icon">LinkedIn</a>  
+        </div>  
+    </header>  
+    <style>  
+        body {  
+            background-color: #1b1b1b;  
+            color: #f0f0f0;  
+            font-family: Arial, sans-serif;  
+        }  
+
+        header {  
+            text-align: center;  
+            padding: 20px;  
+        }  
+
+        nav ul {  
+            list-style-type: none;  
+            padding: 0;  
+        }  
+
+        nav ul li {  
+            display: inline;  
+            margin: 0 15px;  
+        }  
+
+        nav ul li a {  
+            color: #f0f0f0;  
+            text-decoration: none;  
+        }  
+
+        .container {  
+            text-align: center;  
+            padding: 20px;  
+        }  
+
+        .team-member {  
+            display: inline-block;  
+            margin: 20px;  
+            position: relative;  
+            overflow: hidden;  
+            width: 200px; /* Set a fixed width */  
+            transition: transform 0.3s;  
+        }  
+
+        .team-member img {  
+            width: 100%;  
+            height: auto;  
+            border-radius: 10px;  
+            transition: transform 0.5s;  
+        }  
+
+        .team-member:hover img {  
+            transform: scale(1.1); /* Scale image on hover */  
+        }  
+
+        .member-info {  
+            display: none;  
+            position: absolute;  
+            bottom: 0;  
+            left: 0;  
+            right: 0;  
+            background-color: rgba(0, 0, 0, 0.7);  
+            color: #fff;  
+            padding: 10px;  
+            border-radius: 0 0 10px 10px;  
+            transition: opacity 0.5s;  
+            opacity: 0;  
+        }  
+
+        .team-member:hover .member-info {  
+            display: block;  
+            opacity: 1; /* Show info on hover */  
+        }  
+    </style>  
+   
 </head>
 <body>
     <div class="container">
         <div class="card">
-            <img src="image1.jpg" alt="Person explaining ecosystems">
+           <!-- <img src="image1.jpg" alt="Person explaining ecosystems">-->
             <div class="content">
                 <h3>Impact on Biodiversity</h3>
                 <p>Explaining how climate change affects biodiversity and ecosystems.</p>
             </div>
         </div>
         <div class="card">
-            <img src="image2.jpg" alt="Person explaining ecosystems">
+ <!-- <img src="image1.jpg" alt="Person explaining ecosystems">-->
             <div class="content">
                 <h3>Water Resources</h3>
                 <p>Discussing the impact of climate change on water resources and ecosystems.</p>
             </div>
         </div>
         <div class="card">
-            <img src="image3.jpg" alt="Person explaining ecosystems">
+ <!-- <img src="image1.jpg" alt="Person explaining ecosystems">-->
             <div class="content">
                 <h3>Natural Disasters</h3>
                 <p>How climate change increases the frequency and intensity of natural disasters.</p>
             </div>
         </div>
         <div class="card">
-            <img src="image4.jpg" alt="Person explaining ecosystems">
+ <!-- <img src="image1.jpg" alt="Person explaining ecosystems">-->
             <div class="content">
                 <h3>Renewable Energy</h3>
                 <p>The role of renewable energy in mitigating climate change impacts on ecosystems.</p>
@@ -109,5 +235,5 @@
             });
         });
     </script>
-</body>
+</body>  
 </html>
