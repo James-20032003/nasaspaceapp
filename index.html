@@ -3,138 +3,24 @@
 <head>  
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Images - Ecosystem Education Project</title>  
-    <link rel="stylesheet" href="styles.css">  
-    <style>
-
-        /* General body styles */  
-body {  
-    font-family: Arial, sans-serif;  
-    margin: 0;  
-    padding: 0;  
-    background: #2c2c2c;  
-    color: #ffffff;  
-}  
-
-/* Header styles */  
-.header {  
-    background: #1f1f1f;  
-    padding: 10px 20px;  
-    position: fixed; /* Fix the header at the top */  
-    top: 0;  
-    width: 100%;  
-    display: flex;  
-    justify-content: space-between;  
-    align-items: center;  
-    z-index: 1000; /* Ensure it's above other content */  
-}  
-
-.logo h1 {  
-    margin: 0;  
-    color: #00aced; /* Logo color */  
-}  
-
-/* Navigation styles */  
-nav {  
-    flex-grow: 1; /* Allow nav to take up available space */  
-}  
-
-nav ul {  
-    list-style-type: none;  
-    padding: 0;  
-    display: flex;  
-    justify-content: center; /* Centers the nav items */  
-}  
-
-nav ul li {  
-    margin: 0 15px;  
-}  
-
-nav ul li a {  
-    color: #ffffff;  
-    text-decoration: none;  
-    padding: 10px 15px;  
-    border-radius: 5px;  
-    transition: background-color 0.3s;  
-}  
-
-nav ul li a:hover {  
-    background-color: #00aced; /* Highlight on hover */  
-}  
-
-/* Social links */  
-.social-links {  
-    margin-left: 20px;  
-}  
-
-.social-links .social-icon {  
-    margin: 0 10px;  
-    text-decoration: none;  
-    color: #ffffff;  
-    transition: color 0.3s;  
-}  
-
-.social-links .social-icon:hover {  
-    color: #00aced; /* Change color on hover */  
-}  
-
-/* Main styles */  
-main {  
-    padding-top: 80px; /* Add some top padding to avoid content hiding under the fixed header */  
-}  
-
-.container {  
-    margin: 0 auto;  
-    width: 90%;  
-    max-width: 1200px;  
-}  
-
-/* Footer styles */  
-.footer {  
-    background-color: #1f1f1f;  
-    color: #ffffff;  
-    padding: 20px 0;  
-    text-align: center;  
-    position: relative;  
-    width: 100%;  
-}
-    </style>
-</head>  
-<body>  
-    <header class="header">  
-        <div class="logo">  
-            <h1>ClimateStars</h1>  <!-- Logo Title -->  
-        </div>  
-        <nav>  
-            <ul>  
-                <li><a href="index.html">Home</a></li>  
-                <li><a href="videos.html">Videos</a></li>  
-                <li><a href="contact.html">Contact</a></li>  
-                <li><a href="team-members.html">Team Members</a></li>  
-            </ul>  
-        </nav>  
-        <div class="social-links">  
-            <a href="https://www.facebook.com" target="_blank" class="social-icon">Facebook</a>  
-            <a href="https://www.twitter.com" target="_blank" class="social-icon">Twitter</a>  
-            <a href="https://www.instagram.com" target="_blank" class="social-icon">Instagram</a>  
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon">LinkedIn</a>  
-        </div>  
-    </header> 
-     
+    <title>Ecosystem Education Project</title>  
     <style>  
         body {  
-            background-color: #1b1b1b;  
-            color: #f0f0f0;  
             font-family: Arial, sans-serif;  
+            background-color: #f4f4f4;  
+            margin: 0;  
+            padding: 0;  
         }  
 
         header {  
+            background: #007bff;  
+            color: #fff;  
+            padding: 20px 0;  
             text-align: center;  
-            padding: 20px;  
         }  
 
         nav ul {  
-            list-style-type: none;  
+            list-style: none;  
             padding: 0;  
         }  
 
@@ -143,33 +29,30 @@ main {
             margin: 0 15px;  
         }  
 
-        nav ul li a {  
-            color: #f0f0f0;  
+        nav a {  
+            color: #fff;  
             text-decoration: none;  
         }  
 
         .cover-image {  
             width: 100%;  
             height: auto;  
-            max-height: 400px;  
-            object-fit: cover; /* Ensure the image covers the area without stretching */  
+            margin-top: 20px;  
         }  
 
         .description {  
-            max-width: 800px;  
-            margin: 20px auto;  
             text-align: center;  
+            margin: 20px;  
         }  
 
-        .videos {  
-            margin-top: 50px;  
-            text-align: center;  
+        .container {  
+            margin: 20px;  
         }  
 
         .video {  
             display: inline-block;  
             margin: 20px;  
-            width: 300px; /* Set a fixed width for videos */  
+            width: 300px;  
             background-color: #333;  
             border-radius: 10px;  
             overflow: hidden;  
@@ -177,26 +60,26 @@ main {
 
         .video iframe {  
             width: 100%;  
-            height: 200px; /* Set a height for the video */  
+            height: 200px;  
         }  
-        
+
         .gallery {  
             display: grid;  
-            grid-template-columns: repeat(3, 1fr); /* 3 columns for the gallery */  
-            gap: 10px; /* Space between images */  
+            grid-template-columns: repeat(3, 1fr);  
+            gap: 10px;  
             max-width: 900px;  
-            margin: 40px auto; /* Center the gallery */  
+            margin: 40px auto;  
         }  
 
         .gallery img {  
-            width: 100%; /* Make sure images are responsive */  
-            height: auto; /* Maintain aspect ratio */  
-            border-radius: 8px; /* Rounded corners for images */  
-            transition: transform 0.3s; /* Smooth scaling transition */  
+            width: 100%;  
+            height: auto;  
+            border-radius: 8px;  
+            transition: transform 0.3s;  
         }  
 
         .gallery img:hover {  
-            transform: scale(1.05); /* Scale images on hover */  
+            transform: scale(1.05);  
         }  
 
         footer {  
@@ -218,24 +101,25 @@ main {
         </nav>  
     </header>  
 
-    <main> 
-         
-           
-         
-        <img src="connected_earth_disasters.67d390cc - Copy.png" alt="Ecosystem Cover" class="cover-image"> <!-- Add your cover image here -->  
+    <main>  
+        <img src="connected_earth_disasters.67d390cc - Copy.png" alt="Ecosystem Cover" class="cover-image">  
         <div class="description">  
             <h2>Welcome to the Ecosystem Education Project</h2>  
             <p>This project is dedicated to educating individuals about the importance of ecosystems and biodiversity. Our aim is to raise awareness and foster a deeper understanding of the environmental issues we face today. Join us in our journey to protect our planet and its precious resources.</p>  
         </div>  
+
         <div class="container">  
-            <h2>Gallery of Ecosystems Affec777ted by Climate Change</h2>  
-            <h3>Amazon Rainforest</h3>  
-            <img src="earth_system_four_panel.jpg (1).webp" alt="Amazon Rainforest">  
-            <p>The Amazon rainforest is one of the most biodiverse places on Earth and is severely affected by deforestation and climate change.</p>  
-            <h3>Coral Reefs</h3>  
-            <img src="floods.png" alt="Coral Reef">  
-            <p>Coral reefs are dying at an alarming rate due to rising ocean temperatures and acidification, which pose a threat to marine life.</p>  
-              
+            <h2>Gallery of Ecosystems Affected by Climate Change</h2>  
+            <div>  
+                <h3>Amazon Rainforest</h3>  
+                <img src="earth_system_four_panel.jpg (1).webp" alt="Amazon Rainforest">  
+                <p>The Amazon rainforest is one of the most biodiverse places on Earth and is severely affected by deforestation and climate change.</p>  
+            </div>  
+            <div>  
+                <h3>Coral Reefs</h3>  
+                <img src="floods.png" alt="Coral Reef">  
+                <p>Coral reefs are dying at an alarming rate due to rising ocean temperatures and acidification, which pose a threat to marine life.</p>  
+            </div>  
         </div>  
 
         <div class="videos">  
@@ -263,23 +147,21 @@ main {
 
         <div class="gallery">  
             <h2>Gallery</h2>  
-           
-            <br>
-             
-            <img src="floodsss.png" alt="Description of Photo 6">  
-            <br>
-            <p>Flood Barriers and Retention Ponds:
 
-Construct flood barriers and retention ponds to absorb excess water during heavy rainfall.</p>
-            
-            <img src="WORLD FIRE.png" alt="Description of Photo 7">  
-            <br>
-            <p>Forest Management Practices:
+            <div>  
+                <img src="floodsss.png" alt="Flood Barriers and Retention Ponds">  
+                <p>Flood Barriers and Retention Ponds: Construct flood barriers and retention ponds to absorb excess water during heavy rainfall.</p>  
+            </div>  
 
-Implement controlled burns and thinning to reduce fuel loads and lower the risk of severe wildfires.</p>
-            <img src="gass at.png" alt="Description of Photo 8">  
-            <p>  Implement advanced filtration and scrubber systems to capture pollutants before they are released into the atmosphere.
-Transition to cleaner energy sources, such as solar, wind, or natural gas, to reduce reliance on fossil fuels. </p>
+            <div>  
+                <img src="WORLD FIRE.png" alt="Forest Management Practices">  
+                <p>Forest Management Practices: Implement controlled burns and thinning to reduce fuel loads and lower the risk of severe wildfires.</p>  
+            </div>  
+
+            <div>  
+                <img src="gass at.png" alt="Pollution Control Measures">  
+                <p>Implement advanced filtration and scrubber systems to capture pollutants before they are released into the atmosphere. Transition to cleaner energy sources, such as solar, wind, or natural gas, to reduce reliance on fossil fuels.</p>  
+            </div>  
         </div>  
     </main>  
 
@@ -293,6 +175,6 @@ Transition to cleaner energy sources, such as solar, wind, or natural gas, to re
                 <a href="https://www.linkedin.com" target="_blank" class="social-icon">LinkedIn</a>  
             </div>  
         </div>  
-    </footer> 
+    </footer>   
 </body>  
 </html>
