@@ -120,6 +120,120 @@ main {
             <a href="https://www.linkedin.com" target="_blank" class="social-icon">LinkedIn</a>  
         </div>  
     </header> 
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change and Ecosystems</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General body styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #2c2c2c;
+            color: #ffffff;
+        }
+
+        /* Container styles */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        /* Card styles */
+        .card {
+            background: #1f1f1f;
+            border-radius: 10px;
+            margin: 20px;
+            overflow: hidden;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card .content {
+            padding: 20px;
+        }
+
+        .card .content h3 {
+            margin: 0 0 10px;
+            color: #00aced;
+        }
+
+        .card .content p {
+            margin: 0;
+        }
+
+        /* Footer styles */
+        .footer {
+            background-color: #1f1f1f;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="image1.jpg" alt="Person explaining ecosystems">
+            <div class="content">
+                <h3>Impact on Biodiversity</h3>
+                <p>Explaining how climate change affects biodiversity and ecosystems.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image2.jpg" alt="Person explaining ecosystems">
+            <div class="content">
+                <h3>Water Resources</h3>
+                <p>Discussing the impact of climate change on water resources and ecosystems.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image3.jpg" alt="Person explaining ecosystems">
+            <div class="content">
+                <h3>Natural Disasters</h3>
+                <p>How climate change increases the frequency and intensity of natural disasters.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="image4.jpg" alt="Person explaining ecosystems">
+            <div class="content">
+                <h3>Renewable Energy</h3>
+                <p>The role of renewable energy in mitigating climate change impacts on ecosystems.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2024 Climate Change Awareness. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript to add some interactivity
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+                alert('More information about ' + card.querySelector('h3').innerText);
+            });
+        });
+    </script>
+</body>
+</html>
+
      
     <style>  
        
