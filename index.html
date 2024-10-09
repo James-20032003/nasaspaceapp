@@ -1,497 +1,189 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Images - Ecosystem Education Project</title>  
-    <link rel="stylesheet" href="styles.css">  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimateStars - Climate Change Awareness</title>
     <style>
-
-        /* General body styles */  
-body {  
-    font-family: Arial, sans-serif;  
-    margin: 0;  
-    padding: 0;  
-    background: #2c2c2c;  
-    color: #ffffff;  
-}  
-
-/* Header styles */  
-.header {  
-    background: #1f1f1f;  
-    padding: 10px 20px;  
-    position: fixed; /* Fix the header at the top */  
-    top: 0;  
-    width: 100%;  
-    display: flex;  
-    justify-content: space-between;  
-    align-items: center;  
-    z-index: 1000; /* Ensure it's above other content */  
-}  
-
-.logo h1 {  
-    margin: 0;  
-    color: #00aced; /* Logo color */  
-}  
-
-/* Navigation styles */  
-nav {  
-    flex-grow: 1; /* Allow nav to take up available space */  
-}  
-
-nav ul {  
-    list-style-type: none;  
-    padding: 0;  
-    display: flex;  
-    justify-content: center; /* Centers the nav items */  
-}  
-
-nav ul li {  
-    margin: 0 15px;  
-}  
-
-nav ul li a {  
-    color: #ffffff;  
-    text-decoration: none;  
-    padding: 10px 15px;  
-    border-radius: 5px;  
-    transition: background-color 0.3s;  
-}  
-
-nav ul li a:hover {  
-    background-color: #00aced; /* Highlight on hover */  
-}  
-
-/* Social links */  
-.social-links {  
-    margin-left: 20px;  
-}  
-
-.social-links .social-icon {  
-    margin: 0 10px;  
-    text-decoration: none;  
-    color: #ffffff;  
-    transition: color 0.3s;  
-}  
-
-.social-links .social-icon:hover {  
-    color: #00aced; /* Change color on hover */  
-}  
-
-/* Main styles */  
-main {  
-    padding-top: 80px; /* Add some top padding to avoid content hiding under the fixed header */  
-}  
-
-.container {  
-    margin: 0 auto;  
-    width: 90%;  
-    max-width: 1200px;  
-}  
-
-/* Footer styles */  
-.footer {  
-    background-color: #1f1f1f;  
-    color: #ffffff;  
-    padding: 20px 0;  
-    text-align: center;  
-    position: relative;  
-    width: 100%;  
-}
-    </style>
-</head>  
-<body>  
-    <header class="header">  
-        <div class="logo">  
-            <h1>ClimateStars</h1>  <!-- Logo Title -->  
-        </div>  
-        <nav>  
-            <ul>  
-                <li><a href="index.html">Home</a></li>  
-                <li><a href="videos.html">Videos</a></li>  
-                <li><a href="contact.html">Contact</a></li>  
-                <li><a href="team-members.html">Team Members</a></li>  
-            </ul>  
-        </nav>  
-        <div class="social-links">  
-            <a href="https://www.facebook.com" target="_blank" class="social-icon">Facebook</a>  
-            <a href="https://www.twitter.com" target="_blank" class="social-icon">Twitter</a>  
-            <a href="https://www.instagram.com" target="_blank" class="social-icon">Instagram</a>  
-            <a href="https://www.linkedin.com" target="_blank" class="social-icon">LinkedIn</a>  
-        </div>  
-    </header> 
-<div class="container">
-<h1>Imagine Our Connected Earth</h1>
-    <p>Climate change is not just an environmental issue; it affects every aspect of our lives. From the air we breathe to the water we drink, and the food we eat, everything is interconnected.
-
-Understanding these connections helps us see the bigger picture and realize the importance of sustainable practices and renewable energy sources.
-
-Join us in exploring how we can make a difference and protect our planet for future generations.</p>
-    
-</div>
-    <style>
-        /* General body styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #2c2c2c;
-            color: #ffffff;
+            background-color: #f0f0f0;
+            color: #333;
         }
-
-        /* Container styles */
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
+        header {
+            background-color: #1e6b7b;
+            color: white;
+            padding: 10px 20px;
+            position: relative;
         }
-
-        /* Card styles */
-        .card {
-            background: #1f1f1f;
-            border-radius: 10px;
-            margin: 20px;
-            overflow: hidden;
-            width: 300px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
+        .social-icons {
+            position: absolute;
+            top: 10px;
+            right: 20px;
         }
-
-        .card:hover {
-            transform: scale(1.05);
+        .social-icons a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
         }
-
-        .card img {
-            width: 100%;
-            height: auto;
+        .social-icons a:hover {
+            color: #ffcc00;
         }
-
-        .card .content {
-            padding: 20px;
-        }
-
-        .card .content h3 {
-            margin: 0 0 10px;
-            color: #00aced;
-        }
-
-        .card .content p {
+        h1 {
+            text-align: center;
             margin: 0;
         }
-
-        /* Footer styles */
-        .footer {
-            background-color: #1f1f1f;
-            color: #ffffff;
-            padding: 20px 0;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #144b5a;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        section {
+            margin: 20px;
+        }
+        .climate-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+            transition: transform 0.3s ease;
+        }
+        .climate-image:hover {
+            transform: scale(1.05);
+        }
+        .heading-section {
+            margin-bottom: 40px;
+        }
+        ul {
+            list-style-type: square;
+            margin: 20px;
+            padding: 10px;
+        }
+        footer {
             text-align: center;
+            padding: 10px;
+            background-color: #1e6b7b;
+            color: white;
             position: relative;
+            bottom: 0;
             width: 100%;
         }
+        footer p {
+            margin: 0;
+        }
+        .contact-form {
+            background-color: #e6f2f5;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1e6b7b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #144b5a;
+        }
     </style>
-
-    <footer class="footer">
-        <p>Welcome To the Earth system, Let us navigate around! </p>
-    </footer>
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <img src="floods.jpg" alt="Person explaining ecosystems">
-            <div class="content">
-                <h3>Impact on Biodiversity</h3>
-                <p>Explaining how climate change affects biodiversity and ecosystems.</p>
-            </div>
+
+    <header>
+        <div class="social-icons">
+            <a href="https://wa.me/your-number" target="_blank">WhatsApp</a>
+            <a href="https://x.com/your-profile" target="_blank">X</a>
         </div>
-        <div class="card">
-            <img src="floods.png" alt="Person explaining ecosystems">
-            <div class="content">
-                <h3>Water Resources</h3>
-                <p>Discussing the impact of climate change on water resources and ecosystems.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="floods.png" alt="Person explaining ecosystems">
-            <div class="content">
-                <h3>Natural Disasters</h3>
-                <p>How climate change increases the frequency and intensity of natural disasters.</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="floods.jpg" alt="Person explaining ecosystems">
-            <div class="content">
-                <h3>Renewable Energy</h3>
-                <p>The role of renewable energy in mitigating climate change impacts on ecosystems.</p>
-            </div>
-        </div>
-    </div>
-    
-    <script>
-        // JavaScript to add some interactivity
-        document.querySelectorAll('.card').forEach(card => {
-            card.addEventListener('click', () => {
-                alert('More information about ' + card.querySelector('h3').innerText);
-            });
-        });
-    </script>
+        <h1>ClimateStars</h1>
+        <p style="text-align: center;">Raising Awareness on Climate Change and its Effects on Ecosystems</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <section class="heading-section">
+        <h2>The Impact of Climate Change on Ecosystems</h2>
+        <img src="climate-change-effects.jpg" alt="Climate change affecting ecosystem" class="climate-image">
+        <p>Climate change has altered weather patterns, caused extreme weather events, and disrupted the balance of natural ecosystems. This has led to habitat loss, species extinction, and changes in agricultural patterns globally.</p>
+    </section>
+
+    <section class="heading-section">
+        <h2>Rising Sea Levels and Coastal Erosion</h2>
+        <img src="sea-level-rise.jpg" alt="Rising sea levels" class="climate-image">
+        <p>As the global temperature increases, polar ice melts, causing sea levels to rise. This threatens coastal ecosystems, displacing both humans and wildlife from their natural habitats.</p>
+    </section>
+
+    <section class="heading-section">
+        <h2>How Can We Overcome These Challenges?</h2>
+        <p>There are several measures we can take to mitigate the effects of climate change:</p>
+        <ul>
+            <li>Reduce carbon emissions by adopting renewable energy sources.</li>
+            <li>Promote reforestation and afforestation to restore natural ecosystems.</li>
+            <li>Support sustainable agricultural practices to reduce environmental impact.</li>
+            <li>Raise awareness and advocate for global climate action.</li>
+            <li>Encourage governments to invest in clean technology and climate change mitigation policies.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ClimateStars | Dedicated to a Sustainable Future</p>
+    </footer>
+
 </body>
-</html>
-
-     
-    <style>  
-       
-
-        header {  
-            text-align: center;  
-            padding: 20px;  
-        }  
-
-        nav ul {  
-            list-style-type: none;  
-            padding: 0;  
-        }  
-
-        nav ul li {  
-            display: inline;  
-            margin: 0 15px;  
-        }  
-
-        nav ul li a {  
-            color: #f0f0f0;  
-            text-decoration: none;  
-        }  
-
-        .cover-image {  
-            width: 100%;  
-            height: auto;  
-            max-height: 400px;  
-            object-fit: cover; /* Ensure the image covers the area without stretching */  
-        }  
-
-        .description {  
-            max-width: 800px;  
-            margin: 20px auto;  
-            text-align: center;  
-        }  
-
-        .videos {  
-            margin-top: 50px;  
-            text-align: center;  
-        }  
-
-        .video {  
-            display: inline-block;  
-            margin: 20px;  
-            width: 300px; /* Set a fixed width for videos */  
-            background-color: #333;  
-            border-radius: 10px;  
-            overflow: hidden;  
-        }  
-
-        .video iframe {  
-            width: 100%;  
-            height: 200px; /* Set a height for the video */  
-        }  
-        
-        .gallery {  
-            display: grid;  
-            grid-template-columns: repeat(3, 1fr); /* 3 columns for the gallery */  
-            gap: 10px; /* Space between images */  
-            max-width: 900px;  
-            margin: 40px auto; /* Center the gallery */  
-        }  
-
-        .gallery img {  
-            width: 100%; /* Make sure images are responsive */  
-            height: auto; /* Maintain aspect ratio */  
-            border-radius: 8px; /* Rounded corners for images */  
-            transition: transform 0.3s; /* Smooth scaling transition */  
-        }  
-
-        .gallery img:hover {  
-            transform: scale(1.05); /* Scale images on hover */  
-        }  
-
-        footer {  
-            text-align: center;  
-            padding: 20px;  
-        }  
-    </style>  
-</head>  
-<body>  
-   
-      
-      
-            
-        
-            <h2>Gallery of Ecosystems Affected by Climate Change</h2>  
-            <h3>Amazon Rainforest</h3>  
-            <img src="floods.png" alt="Amazon Rainforest">  
-            <p>The Amazon rainforest is one of the most biodiverse places on Earth and is severely affected by deforestation and climate change.</p>  
-            <h3>Coral Reefs</h3>  
-            <img src="floods.png" alt="Coral Reef">  
-            <p>Coral reefs are dying at an alarming rate due to rising ocean temperatures and acidification, which pose a threat to marine life.</p>  
-              
-        </div>  
-  
-
-        <div class="videos">  
-            <h2>Featured Videos</h2>  
-            <p>Explore our collection of educational videos that cover various topics related to ecosystems, climate change, conservation efforts, and much more! Each video is designed to provide insights and practical knowledge that you can apply to help make a difference.</p>  
-            
-
-             <div class="video">  
-                <h3>Conservation Strategies</h3>  
-                <iframe src="https://www.youtube.com/embed/example3" frameborder="0" allowfullscreen></iframe>  
-                <p>Explore effective strategies for conserving ecosystems and restoring habitats for future generations.</p>  
-            </div>   
-
-            <div class="video">  
-                <h3>Conservation Strategies</h3>  
-                <iframe src="https://www.youtube.com/embed/example3" frameborder="0" allowfullscreen></iframe>  
-                <p>Explore effective strategies for conserving ecosystems and restoring habitats for future generations.</p>  
-            </div>  
-        </div>  
-
-      <style>
-          /* Gallery styles */  
-        .gallery {  
-            display: grid;  
-            grid-template-columns: repeat(3, 1fr); /* 3 columns for the gallery */  
-            gap: 20px; /* Space between images */  
-            margin-top: 40px; /* Top margin for spacing */  
-        }  
-
-        .gallery-item {  
-            background-color: #333;  
-            border-radius: 8px;  
-            overflow: hidden; // Ensures rounded corners for the background  
-            text-align: center;  
-            padding: 10px;  
-        }  
-
-        .gallery-item img {  
-            width: 100%;  
-            height: auto;  
-            border-radius: 8px; /* Rounded corners for images */  
-            transition: transform 0.3s; /* Smooth scaling transition */  
-        }  
-
-        .gallery-item img:hover {  
-            transform: scale(1.05); /* Scale images on hover */  
-        }  
-
-        .gallery-item p {  
-            margin: 10px 0 0;  
-            font-size: 14px;  
-        }  
-    </style>  
-
-    <div class="container">  
-        <h2>Gallery of Ecosystems Affected by Climate Change</h2>  
-
-        <div class="gallery">  
-            <div class="gallery-item.">  
-                <img src="earth_system_four_panel.jpg" alt="Amazon Rainforest">  
-                <p>The Amazon rainforest is one of the most biodiverse places on Earth and is severely affected by deforestation and climate change.</p>  
-            </div>  
-
-            <div class="gallery-item">  
-                <img src="floodsss.png" alt="Coral Reef">  
-                <p>Coral reefs are dying at an alarming rate due to rising ocean temperatures and acidification, which pose a threat to marine life.</p>  
-            </div>  
-
-            <div class="gallery-item">  
-                <img src="floodsss.png" alt="Flood Barriers and Retention Ponds">  
-                <p>Flood Barriers and Retention Ponds: Construct flood barriers and retention ponds to absorb excess water during heavy rainfall.</p>  
-            </div>  
-
-            <div class="gallery-item">  
-                <img src="WORLD FIRE.png" alt="Forest Management Practices">  
-                <p>Forest Management Practices: Implement controlled burns and thinning to reduce fuel loads and lower the risk of severe wildfires.</p>  
-            </div>  
-
-            <div class="gallery-item">  
-                <img src="gass at.png" alt="Pollution Control Measures">  
-                <p>Implement advanced filtration and scrubber systems to capture pollutants before they are released into the atmosphere. Transition to cleaner energy sources, such as solar, wind, or natural gas, to reduce reliance on fossil fuels.</p>  
-            </div>  
-        </div>  
-    </div> 
-
-
-  
-    <style>  
-       
-        }  
-        .gallery {  
-            display: grid;  
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));  
-            gap: 15px;  
-        }  
-        .photo {  
-            position: relative;  
-            overflow: hidden;  
-            border: 2px solid #ddd;  
-            border-radius: 8px;  
-            background-color: #fff;  
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
-        }  
-        .photo img {  
-            width: 100%;  
-            height: auto;  
-            display: block;  
-        }  
-        .description {  
-            padding: 10px;  
-            text-align: center;  
-            font-weight: bold;  
-            background-color: #fff;  
-        }  
-    </style>  
-<div class ="container">
-<h1>EEFECTS OF WIRLD FIRES</h1>
-    <P>In the heart of a dense forest, a quiet battle unfolds. The trees, tall and majestic, stand as silent sentinels, their leaves whispering secrets of resilience. But beneath this serene facade, danger lurks. NASA’s ECOSTRESS data reveals the hidden struggle of plants as they face the relentless threat of wildfires.</P>
-<P>In the months leading up to a wildfire, ECOSTRESS captures the subtle signs of stress. The plants, once vibrant and lush, now show signs of strain. Their leaves curl, their colors fade, and their ability to photosynthesize diminishes. The forest, a once-thriving ecosystem, teeters on the brink of disaster.</P>
-
-
-<h1>Effect of floods on agriculture</h1>
-
-
-    <p>In the fertile plains of a thriving agricultural region, the skies darken ominously as heavy clouds gather. Farmers, who have tended their fields with care, look up with a mix of hope and apprehension. Rain is a blessing, but too much can spell disaster. NASA’s satellite data begins to capture the unfolding drama from above.</p>
-</div>
- 
-      <main>  
-        <div class="container">  
-            <h2>Get in Touch</h2>  
-            <form onsubmit="return showAlert();">  
-                <label for="name">Name:</label>  
-                <input type="text" id="name" name="name" required>  
-                
-                <label for="email">Email:</label>  
-                <input type="email" id="email" name="email" required>  
-                
-                <label for="message">Message:</label>  
-                <textarea id="message" name="message" rows="4" required></textarea>  
-                
-                <input type="submit" value="Send Message">  
-            </form>  
-        </div>  
-    
-      </style>
-    </main>
-    
-
-    <footer class="footer">  
-        <div class="footer-content">  
-            <p>&copy; 2024climatestars</p>  
-            <div class="social-links">  
-                <a href="https://www.facebook.com" target="_blank" class="social-icon">Facebook</a>  
-                <a href="https://www.twitter.com" target="_blank" class="social-icon">Twitter</a>  
-                <a href="https://www.instagram.com" target="_blank" class="social-icon">Instagram</a>  
-                <a href="https://www.linkedin.com" target="_blank" class="social-icon">LinkedIn</a>  
-            </div>  
-        </div>  
-    </footer> 
-</body>  
 </html>
